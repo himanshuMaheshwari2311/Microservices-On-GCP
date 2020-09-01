@@ -1,7 +1,6 @@
 package com.stark.profileservice.controller;
 
 
-import com.stark.profileservice.model.Profile;
 import com.stark.profileservice.service.ProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +19,8 @@ public class ProfileController {
     }
 
     @GetMapping(value="/get-profile")
-    public Profile getProfile() {
-        return null;
+    public String getProfile() {
+        return profileService.testService();
     }
+
 }

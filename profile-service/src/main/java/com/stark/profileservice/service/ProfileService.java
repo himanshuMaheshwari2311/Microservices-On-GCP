@@ -7,4 +7,5 @@ public interface ProfileService {
     Profile get(String emailId);
     Profile update(Profile profile);
     boolean delete(String emailId);
+    String testService();
 }
